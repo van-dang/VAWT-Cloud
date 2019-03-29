@@ -1,0 +1,6 @@
+V = VectorElement("CG", "tetrahedron", 1)
+v = TestFunction(V)
+u = Coefficient(V)
+
+a = inner(u,v)*dx
+

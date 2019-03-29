@@ -1,0 +1,7 @@
+with open("NSEbase.ufl") as f:
+  exec(f.read())
+
+a = adjoint(derivative(rd_m + inner(u, v)/k*dx + d*inner(grad(u), grad(v))*dx, u, u_))
+L_c = derivative(action(rd_c, p), u, v)
+L = inner(psi_m, v)*dx + inner(bpsi_m, v)*ds + inner(u0, v)/k*dx - L_c
+
