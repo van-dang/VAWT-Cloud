@@ -28,7 +28,7 @@ For a multi-node system, openmpi needs to be compatible between the hosted machi
 mpirun -n 30 singularity exec -B $PWD writable_fenics_hpc.simg ./mpi_hello_world
 ```
 
-## For Marsta turbine
+# Simulation with the Marsta turbine
 
 ### Pre-processing
 mpirun -n 8 -quiet pre-prossessing-vawt/vawt_prepro -m  meshes_vawt/marsta_mesh.xml -o mesh.bin -n 0 -a adaptive -s box -k 0.95 0.005 -c 3.0 0 -44.0 -L 2.8 1. 3.
