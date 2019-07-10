@@ -1,7 +1,7 @@
 nac_lc = 0.015;
 cyl_lc = 0.5;
 
-xshift = -1.0;
+xshift = -1.;
 yshift = 0.05;
 
 Point(1000) = { 0.99591000-xshift, 0.00228000-yshift, 0.00000000, nac_lc};
