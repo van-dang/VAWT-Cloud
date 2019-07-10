@@ -57,7 +57,7 @@ Point(1000) = { 0.99591000-xshift, 0.00228000-yshift, 0.00000000, nac_lc};
 
 Point(10000) = {0.0,0,0,cyl_lc};
 
-R = 2.5;
+R = 5.0;
 Point(20000) = {R,0,0,cyl_lc};
 Point(30000) = {0.0,R,0,cyl_lc};
 Point(40000) = {-R,0,0,cyl_lc};
