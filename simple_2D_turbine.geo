@@ -1,7 +1,7 @@
-nac_lc = 0.01;
-cyl_lc = 0.6;
+nac_lc = 0.015;
+cyl_lc = 0.5;
 
-xshift = -1;
+xshift = -0.2;
 yshift = 0.05;
 
 Point(1000) = { 0.99591000-xshift, 0.00228000-yshift, 0.00000000, nac_lc};
@@ -57,10 +57,11 @@ Point(1000) = { 0.99591000-xshift, 0.00228000-yshift, 0.00000000, nac_lc};
 
 Point(10000) = {0.0,0,0,cyl_lc};
 
-Point(20000) = {5.0,0,0,cyl_lc};
-Point(30000) = {0.0,5,0,cyl_lc};
-Point(40000) = {-5,0,0,cyl_lc};
-Point(50000) = {0,-5,0,cyl_lc};
+R = 2.5;
+Point(20000) = {R,0,0,cyl_lc};
+Point(30000) = {0.0,R,0,cyl_lc};
+Point(40000) = {-R,0,0,cyl_lc};
+Point(50000) = {0,-R,0,cyl_lc};
 
 Circle(1) = {20000,10000,30000};
 Circle(2) = {30000,10000,40000};
