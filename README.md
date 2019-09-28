@@ -35,3 +35,10 @@ mpirun -n 8 -quiet pre-prossessing-vawt/vawt_prepro -m  meshes_vawt/marsta_mesh.
 
 ### Execute the demo
 mpirun -n 8 source_vawt/demo -m mesh.bin -n 500 -v 1.45e-5 -a 0 -t 60.83 -p 1 -T 500 -w 200 -b 0.5 -r 49.0 -c 0.1 -k 0.2 10.0 10.0 -d 0 -g 0.1 -x 0.3 -z -50.0 50.0
+
+# References
+V. D. Nguyen, J. Jansson, M. Leoni, B. Janssen, A. Goude, and J. Hoffman, “Modelling of rotating vertical axis turbines using a multiphase finite element method,” in MARINE 2017 : Computational Methods in Marine Engineering VII15 - 17 May 2017, Nantes, France, 2017, pp. 950–960, qC 20170629. [Online]. Available: http://congress.cimne.com/marine2017/frontal/Doc/Ebookmarine.pdf
+
+V.-D. Nguyen, J. Jansson, A. Goude, and J. Hoffman, “Direct finite element simulation of the turbulent flow past a vertical axis wind turbine,” Renewable Energy, vol. 135, pp. 238 – 247, 2019. [Online]. Available: http://www.sciencedirect.com/science/article/pii/ S0960148118314174
+
+V.-D. Nguyen, J. Jansson, A. Goude, and J. Hoffman, “Technical report – comparison of direct finite element simulation with actuator line models and vortex models for simulation of turbulent flow past a vertical axis wind turbine,” 2019. [Online]. Available: https://arxiv.org/abs/1909.01776
